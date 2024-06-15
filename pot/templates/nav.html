@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HEADER START -->
+<header class="tj-header-area header-absolute">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+  
+          <div class="logo-box">
+                
+           
+          <img  class="primary-logo" src="{{home.logo.url}}" alt="Opeyemi" />
+     
+                  </div>
+  
+                    <div class="header-info-list d-none d-md-inline-block">
+              <ul class="ul-reset">
+                <li><a href="">{{home.email}}</a></li>
+              </ul>
+            </div>
+          
+          <!-- menu -->
+          <div class="header-menu d-none d-lg-inline-block" id="headerMenu">
+            <ul id="menu-main-menu" class=""><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-552" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-552 nav-item"><a title="Services" href="/#services" class="nav-links">Services</a></li>
+                <!--ul id="menu-main-menu" class=""><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-552" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-552 nav-item"><a title="Services" href="/#services" class="nav-links">Services</a></li-->
+                    <li itemscope="itemscope"  id="menu-item-553" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-553 nav-item"><a title="Works" href="/#works" class="nav-links">Works</a></li>
+                    <li itemscope="itemscope"  id="menu-item-554" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-554 nav-item"><a title="Resume" href="/#resume" class="nav-links">Resume</a></li>
+                    <li itemscope="itemscope"  id="menu-item-555" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-555 nav-item"><a title="Skills" href="/#skills" class="nav-links">Skills</a></li>
+                    <!--li itemscope="itemscope" id="menu-item-556" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-556 nav-item"><a title="Testimonials" href="/#testimonials" class="nav-links">Testimonials</a></li-->
+                    <li itemscope="itemscope"  id="menu-item-557" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-557 nav-item"><a title="Contact" href="/#contact" class="nav-links">Contact</a></li>
+                    </ul> </div>
+  
+          <!-- mobile menu -->
+          <div class="mobile-menu d-lg-none"></div>
+  
+                    <div class="header-button">
+              
+                <a href="{{home.whatsapp}}" class="btn tj-btn-primary">Hire me!</a>
+                        </div>
+          
+          <div class="menu-bar d-lg-none">
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="tj-header-area header-2 header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center justify-content-between">
+          <!-- logo -->
+          <div class="logo-box">
+                
+            <a class="primary-logo" href="{% url 'home' %}">
+          <img src="{{home.logo.url}}" alt="logo" />
+        </a>
+                  </div>
+  
+                    <div class="header-info-list d-none d-md-inline-block">
+              <ul class="ul-reset">
+                <li><a href="">{{home.email}}</a></li>
+              </ul>
+            </div>
+          
+          <!-- menu -->
+          <div class="header-menu d-none d-lg-inline-block">
+            <ul id="menu-main-menu-1" class=""><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-552 nav-item"><a title="Services" href="/#services" class="nav-links">Services</a></li>
+  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-553 nav-item"><a title="Works" href="/#works" class="nav-links">Works</a></li>
+  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-554 nav-item"><a title="Resume" href="/#resume" class="nav-links">Resume</a></li>
+  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-555 nav-item"><a title="Skills" href="/#skills" class="nav-links">Skills</a></li>
+  <!--li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-556 nav-item"><a title="Testimonials" href="/#testimonials" class="nav-links">Testimonials</a></li--->
+  <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item active menu-item-557 nav-item"><a title="Contact" href="/#contact" class="nav-links">Contact</a></li>
+  </ul>        </div>
+  
+                    <div class="header-button">
+              
+                <a href="{{home.whatsapp}}" class="btn tj-btn-primary">Hire me!</a>
+                        </div>
+          
+          <div class="menu-bar d-lg-none">
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% endblock %}
